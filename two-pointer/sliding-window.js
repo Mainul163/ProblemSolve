@@ -1,16 +1,26 @@
-// let array=[3, 1, 2, 7, 4, 2, 1, 1, 5]
+// ******** brute force **********************************
 
 
-// for(let i=0;i<array.length;i++){
+let array=[3, 1, 2, 7, 4, 2, 1, 1, 5]
+let sum=0
+let maxSum=0;
+let k=3
+for(let i=0;i<array.length;i++){
+    for(let j=i;j<i+k;j++){
+         sum+=array[j];
+        
+        }
+        if(sum>maxSum){
+            maxSum=sum
+        }
+        sum=0;
+       
+    }
 
-//     console.log(array[i],"array one")
+console.log(maxSum,"maxsum")
 
-//     for(let j=i;j<i+3;j++){
-
-//         console.log(array[j],"array two")
-//     }
-// }
-
+// maxSum=Math.max(sum,maxSum)
+// console.log(maxSum,"maxsum")
 
 //****************  Maximum Sum Subarray of size K **************************
 
@@ -26,7 +36,6 @@ function maxSubarraySum(nums, K) {
 
     // Slide the window across the array
     for (let i = K; i < nums.length; i++) {
-        console.log(nums[i],nums[i-K] )
         sum += nums[i] - nums[i - K]; // Remove leftmost element, add new one
         maxSum = Math.max(maxSum, sum);
     }
