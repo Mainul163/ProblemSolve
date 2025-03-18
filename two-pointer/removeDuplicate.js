@@ -1,3 +1,7 @@
+// Example 2: Removing Duplicates (Same Direction)
+// Problem: Remove duplicate numbers in a sorted array in-place.
+
+
 
 function removeDuplicateArray(nums){
 
