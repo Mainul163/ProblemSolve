@@ -1,3 +1,8 @@
+
+
+// First Negative Number in every Window of Size K | Sliding Window
+
+
 function findNegativeNumber(array,k){
 
     const result = [];
