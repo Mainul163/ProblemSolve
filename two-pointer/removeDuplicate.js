@@ -35,5 +35,7 @@ function removeDuplicateArray(nums){
 
 const nums = [1, 1, 2, 2, 3, 4, 5, 5, 5];
 const newLength = removeDuplicateArray(nums);
+console.log(nums)
+console.log(newLength)
 const findUniqueArray=nums.slice(0,newLength)
 console.log(findUniqueArray)
