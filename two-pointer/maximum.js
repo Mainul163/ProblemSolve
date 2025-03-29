@@ -1,3 +1,5 @@
+// ******* Maximum of all subarrays of size k **************
+
 function maxNumber(array, k) {
   let sum = 0;
   let maximum = 0;
