@@ -18,6 +18,6 @@ function maxNumber(array, k) {
   return maximum;
 }
 
-const array = [1, 3, -1, -3, 5, 3, 6, 7];
+const array = [50, 3, -1, -3, 5, 3, 6, 7];
 
 console.log(maxNumber(array, 3));
