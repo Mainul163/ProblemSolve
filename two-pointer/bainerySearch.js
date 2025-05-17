@@ -20,3 +20,5 @@ function binarySearch(arr, target) {
 const numbers = [1, 3, 5, 7, 9, 11, 13];
 const index = binarySearch(numbers, 7);
 console.log(index);
+
+// time complexity  O(log n)
