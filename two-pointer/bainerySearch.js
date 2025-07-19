@@ -3,11 +3,11 @@ function binarySearch(arr, target) {
   const right = arr.length - 1;
 
   while (left <= right) {
-    const mid = (left + right) / 2;
+    const mid = Math.floor((left + right) / 2);
 
     if (arr[mid] === target) {
       return mid;
-    } else if (mid < target) {
+    } else if (arr[mid] < target) {
       left = mid + 1; /* target boro hoile mid theke right e jabe*/
     } else {
       right = mid - 1; /* target boro hoile mid theke left e jabe*/
