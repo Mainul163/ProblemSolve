@@ -8,9 +8,9 @@ function binarySearch(arr, target) {
     if (arr[mid] === target) {
       return mid;
     } else if (arr[mid] < target) {
-      left = mid + 1; /* target boro hoile mid theke right e jabe*/
+      left = left + 1; /* target boro hoile mid theke right e jabe*/
     } else {
-      right = mid - 1; /* target boro hoile mid theke left e jabe*/
+      right = right - 1; /* target boro hoile mid theke left e jabe*/
     }
   }
 
