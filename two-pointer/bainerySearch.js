@@ -10,7 +10,7 @@ function binarySearch(arr, target) {
     } else if (arr[mid] < target) {
       left = mid + 1; /* target boro hoile mid theke right e jabe*/
     } else {
-      right = mid - 1; /* target boro hoile mid theke left e jabe*/
+      right = mid - 1; /* target choto hoile mid theke left e jabe*/
     }
   }
 
